@@ -1,0 +1,23 @@
+{
+  "name": "node-ntp.js",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khejing/node-ntp.js.git"
+  },
+  "author": "Will Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khejing/node-ntp.js/issues"
+  },
+  "homepage": "https://github.com/khejing/node-ntp.js#readme",
+  "dependencies": {
+    "moment": "^2.10.3",
+    "mqtt": "^1.3.5"
+  }
+}
