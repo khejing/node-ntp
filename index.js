@@ -16,7 +16,9 @@ mqttClientInstance.subscribe(timeSyncTopic);
 mqttClientInstance.on('message', function(messageTopic, data) {
     var msg = JSON.parse(data);
     if(msg.timesync === "Request"){
-        mqttClientInstance.publish(msg.clientId, JSON.stringify({timesync: "Response", serverTime: Date.now()}));
+        var now = Date.now();
+        mqttClientInstance.publish(msg.clientId, JSON.stringify({timesync: "Response", serverTime: now}));
+        console.log("response with time: "+now);
     }
 });
 /* when got exit signal, then exit
